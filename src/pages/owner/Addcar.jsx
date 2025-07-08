@@ -124,21 +124,19 @@ const Addcar = () => {
             </select>
           </div>
           {/* Car Location */}
-          <div className="w-130 max-w-3xl">
-            <div className="flex flex-col w-full ">
-              <label className="mb-1 font-medium text-gray-700">Car location</label>
-              <select
-                onChange={(e) => Setcar({ ...car, location: e.target.value })}
-                value={car.location}
-                className="px-3 py-2 border w-full border-borderColor rounded-md focus:outline-primary"
-              >
-                <option value="">Select Car location</option>
-                <option value="New york">New york</option>
-                <option value="Los angels">Los angels</option>
-                <option value="Houston">Houston</option>
-                <option value="Chicago">Chicago</option>
-              </select>
-            </div>
+          <div className="flex flex-col w-full max-w-3xl col-span-4 max-sm:col-span-1">
+            <label className="mb-1 font-medium text-gray-700">Car location</label>
+            <select
+              onChange={(e) => Setcar({ ...car, location: e.target.value })}
+              value={car.location}
+              className="px-3 py-2 border w-full border-borderColor rounded-md focus:outline-primary"
+            >
+              <option value="">Select Car location</option>
+              <option value="New york">New york</option>
+              <option value="Los angels">Los angels</option>
+              <option value="Houston">Houston</option>
+              <option value="Chicago">Chicago</option>
+            </select>
           </div>
      
 

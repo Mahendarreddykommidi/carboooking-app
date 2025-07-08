@@ -50,7 +50,7 @@ const Sidebar = () => {
           </button>
         )}
 
-        <p className="mt-4 mb-2 text-base md:text-lg font-semibold text-gray-800 text-center">
+        <p className="mt-4 mb-2 text-base max-sm:text-xs max-sm:px-2 md:text-lg font-semibold text-gray-800 text-center">
           {user?.name}
         </p>
         <div className="w-full mt-2">
